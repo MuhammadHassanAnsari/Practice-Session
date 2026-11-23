@@ -114,3 +114,108 @@
 //     console.log(a > 18);
 // })
 
+// let data = [1, 2, 3];
+
+// let result = data.filter(num => num > 5);
+
+// console.log(result);
+
+
+// let data = ["Karachi", "Lahore", "Islamabad"];
+
+// let result = data.map(city => city.toUpperCase());
+
+// console.log(result);
+
+
+
+// let users = [
+//     { name: "Ali", age: 17 },
+//     { name: "Ahmed", age: 22 },
+//     { name: "Sara", age: 19 }
+// ];
+
+// let result = users
+//     .filter(user => user.age >= 18)
+//     .map(user => user.name);
+
+// console.log(result);
+
+
+
+
+// let users = [
+//     { name: "Ali", age: 20 },
+//     { name: "Sara", age: 16 },
+//     { name: "Ahmed", age: 22 }
+// ];
+
+// let result = users
+//     .map(user => user.age)
+//     .filter(age => age >= 18);
+
+// console.log(result);
+
+
+
+// let cities = ["Karachi", "Lahore", "Islamabad", "Quetta"];
+
+// cities.splice(1, 2);
+
+// console.log(cities);
+
+
+
+// let numbers = [10, 20, 30];
+
+// let result = numbers.forEach(num => num * 2);
+
+// console.log(result);
+
+
+
+// let numbers = [2, 4, 7, 8];
+
+// let result = numbers.some(num => num > 5);
+
+// console.log(result);
+
+
+// let cities = ["Karachi", "Lahore", "Quetta"];
+
+// console.log(cities.includes("Lahore"));
+
+
+// localStorage.setItem("name", "Ali");
+// localStorage.setItem("city", "Karachi");
+
+// localStorage.clear();
+
+// console.log(localStorage.getItem("city"));
+
+
+// async function getData() {
+//     let data = [10, 20, 30];
+//     return data;
+// }
+
+// let result = await getData();
+
+// console.log(result);
+
+
+// let numbers = [10, 20, 30];
+
+// numbers.forEach((num, index) => {
+//     console.log(num, index);
+// });
+
+
+
+let result = await Promise.all([
+    Promise.resolve(10),
+    Promise.resolve(20),
+    Promise.resolve(30)
+]);
+
+console.log(result);
